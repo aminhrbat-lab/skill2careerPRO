@@ -1,0 +1,6 @@
+{
+  "name": "Skill2Career",
+  "description": "Learn Your Skills. Discover Your Potential. Build Your Career.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #F3F7FC;
+  --ink-deep: #0B1F3A;
+  --royal-blue: #1D4ED8;
+  --sea-green: #0D9488;
+  --sky-blue: #0284C7;
+  --sky-tint: #38BDF8;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--royal-blue);
+    color: #FFFFFF;
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink-deep);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    background-color: var(--bg-canvas);
+    background-image:
+      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.14) 0px, transparent 50%),
+      radial-gradient(at 100% 10%, rgba(13, 148, 136, 0.12) 0px, transparent 45%),
+      linear-gradient(160deg, #F4F8FD 0%, #EDF4FB 52%, #EEF9F7 100%);
+  }
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.corporate-gradient {
+  background: linear-gradient(135deg, #0B1F3A 0%, #1D4ED8 42%, #0D9488 78%, #38BDF8 100%);
+}
+
+.corporate-panel-gradient {
+  background: linear-gradient(145deg, #091A33 0%, #153B75 48%, #0E6B64 85%, #0C4A6E 100%);
+}
+
+.corporate-cta-gradient {
+  background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 40%, #0284C7 74%, #0D9488 100%);
+}
+
+.corporate-cta-gradient:hover {
+  background: linear-gradient(135deg, #0B1F3A 0%, #1E40AF 42%, #0369A1 76%, #0F766E 100%);
+}
+
+.corporate-text-gradient {
+  background: linear-gradient(125deg, #0B1F3A 0%, #1D4ED8 45%, #0D9488 80%, #0284C7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
